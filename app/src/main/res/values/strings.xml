@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UTSproject</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login\n</string>
+    <string name="food_list_title">Food and Beverages</string>
+    <string name="order_food">Order Food</string>
+    <string name="thanks_for_your_order_and_please_wait_for_delivering_by_nearest_courier">Thanks for your order and please wait for delivering by nearest courier</string>
+    <string name="back_to_menu">Back to Menu</string>
+    <string name="register">Register</string>
+    <string name="btn_register">Register</string>
+    <string name="registration_success">Registered successfully!</string>
+    <string name="incorrect_credentials">Username or password is incorrect</string>
+    <string name="order_confirmation" />
+</resources>

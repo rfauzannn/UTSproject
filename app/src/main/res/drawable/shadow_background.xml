@@ -1,0 +1,18 @@
+<!-- res/drawable/shadow_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bayangan -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80352F2F" /> <!-- Warna bayangan (hitam semi-transparan) -->
+            <corners android:radius="16dp" /> <!-- Sudut melengkung bayangan -->
+            <padding android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp" /> <!-- Jarak bayangan -->
+        </shape>
+    </item>
+    <!-- Background utama -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#658A88" /> <!-- Warna latar belakang utama -->
+            <corners android:radius="20dp" /> <!-- Sudut melengkung -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFE6E6"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF0F5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Gambar Makanan di atas -->
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/batagor" />
+
+        <!-- Nama dan Deskripsi Makanan -->
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="Food Name"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foodDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="Description of the food."
+            android:textColor="#6D6D6D"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Price of the food"
+            android:textColor="#FF5722"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- LinearLayout untuk Order Here dan logo keranjang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/orderHereText"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="20sp"
+                android:text="Order Here ->"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/orderCartIcon"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="Order Icon"
+                android:focusable="true"
+                android:src="@drawable/logo_buy" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
